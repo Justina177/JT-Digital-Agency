@@ -6,11 +6,15 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
     padding: 10px 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 `;
+
+const Logo = styled.h1`
+  font-weight: bold;
+  text-decoration: underline crimson; 
+`
 
 const Menu = styled.ul`
 display: flex;
@@ -31,11 +35,6 @@ const Left = styled.div`
   justify-content: space-between;
 `
 
-const Logo = styled.h1`
-  font-weight: bold;
-  text-decoration: underline crimson; 
-`
-
 const Button = styled.button`
 border: 2px solid black;
 padding: 10px 15px;
@@ -51,7 +50,7 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <Left>
-              <h1><Logo>Agency</Logo></h1>
+              <Logo>Agency</Logo>
               <Menu>
                 <MenuItem>Home</MenuItem>
                 <MenuItem>Features</MenuItem>

@@ -1,5 +1,6 @@
 // import './App.css';
 import styled from 'styled-components';
+import Intro from './Components/Intro';
 import Navbar from './Components/Navbar/Navbar';
 
 const Container = styled.div`
@@ -11,6 +12,7 @@ function App() {
     <div className="container">
       <Container>
       <Navbar />
+      <Intro />
       </Container> 
       
     
