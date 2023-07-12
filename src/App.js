@@ -4,7 +4,6 @@ import Navbar from './Components/Navbar/Navbar';
 
 const Container = styled.div`
 height: 60vh;
-background-color: blue;
 `
 
 function App() {
