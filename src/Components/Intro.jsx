@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import img1 from '../images/girl1-removebg-preview.png';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -73,7 +74,7 @@ const Image = styled.img`
 
 const Intro = () => {
   return (
-    /* <Container>
+    <Container>
       <Left>
         <Title>Adenventures in Creative age</Title>
         <Desc>
@@ -94,9 +95,10 @@ const Intro = () => {
       <Right>
       <Image src={img1} alt="" />
       </Right>
-    </Container> */
+      <AnimatedShapes />
+    </Container>
 
-    <Container>
+    /* <Container>
       <Left>
         <Title>Adventures in creative age</Title>
         <Desc>
@@ -114,7 +116,7 @@ const Intro = () => {
       </Left>
       <Right><Image src={img1}/></Right>
       
-    </Container>
+    </Container> */
   )
 }
 
