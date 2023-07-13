@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import img1 from '../images/girl1-removebg-preview.png';
 
 const Container = styled.div`
   height: calc(100vh - 50px);
+  display: flex;
   padding: 20px;
 `;
 
@@ -61,13 +63,17 @@ margin-top: 5px;
 
 const Right = styled.div`
   width: 40%;
+  padding-top: 20px;
 `;
 
+const Image = styled.img`
+  width: 100%;
+`
 
 
 const Intro = () => {
   return (
-    <Container>
+    /* <Container>
       <Left>
         <Title>Adenventures in Creative age</Title>
         <Desc>
@@ -85,7 +91,29 @@ const Intro = () => {
            
         </Info>
       </Left>
-      <Right></Right>
+      <Right>
+      <Image src={img1} alt="" />
+      </Right>
+    </Container> */
+
+    <Container>
+      <Left>
+        <Title>Adventures in creative age</Title>
+        <Desc>
+          We believe that designing products and services in close partnership
+          with our clients is the only way to have a real impact on their
+          business.
+        </Desc>
+        <Info>
+          <Button>START A PROJECT</Button>
+          <Contact>
+            <Phone>Call Us (012) 345 - 6789</Phone>
+            <ContactText>For any question or concern</ContactText>
+          </Contact>
+        </Info>
+      </Left>
+      <Right><Image src={img1}/></Right>
+      
     </Container>
   )
 }
