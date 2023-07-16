@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Map from "../images/mapPhone-removebg-preview.png";
+import Map from '../images/pb.jpeg';
 import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
@@ -12,7 +12,11 @@ const Left = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
+  width: 70%;
+  height: 90vh;
+  /* align-items: center;
+  justify-items: center;
+  margin: 20px, 10px, 20px, 10px; */
 `;
 
 const Right = styled.div`

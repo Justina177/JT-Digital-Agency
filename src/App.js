@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import Featured from './Components/Featured';
 import Intro from './Components/Intro';
 import Navbar from './Components/Navbar/Navbar';
+import Service from './Components/Service';
 
 const Container = styled.div`
 height: 100vh;
@@ -27,7 +28,13 @@ clip-path: polygon(64% 0, 100% 0%, 100% 100%, 55% 100%);
 const FeaturedShape = styled.div`
 ${Shape};
 clip-path: polygon(0 0, 55% 0%, 33% 100%, 0% 100%);
-  background-color: pink;
+background-color :pink ;
+`;
+
+const ServiceShape = styled.div`
+${Shape}
+clip-path: polygon(0 0, 33% 0, 33% 100%, 0 100%);
+background-color: #f88497;
 `
 
 function App() {
@@ -42,10 +49,15 @@ function App() {
       <Featured />
       <FeaturedShape />
       </Container>
+      <Container>
+      <Service />
+      <ServiceShape />
+      </Container>
       
     
       
     </div>
+    // 54:08
   );
 }
 
