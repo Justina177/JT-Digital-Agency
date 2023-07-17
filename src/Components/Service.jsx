@@ -3,18 +3,32 @@ import styled from 'styled-components';
 import img3 from '../images/js1-removebg-preview.png'
 import MiniCard from './MiniCard';
 import play from "../images/play.png";
+import vid1 from '../images/pexels-taryn-elliott-5309351.mp4';
 
 const Container = styled.div`
 display: flex;  
+height: 100%;
 `;
 const Left = styled.div`
 width: 50%;
+position: relative;
 `;
 
 const Image = styled.img`
 display: ${(props) => props.open && "none"};
 height: 100%;
 margin-left: 100px;
+`;
+
+const Video = styled.video`
+  display: ${(props) => !props.open && "none"};
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
 `;
 
 const Right = styled.div`
@@ -66,7 +80,13 @@ const Service = () => {
   return (
     <Container>
         <Left>
-            <Image pen={open} src={img3} alt=""></Image>
+            <Image open={open} src={img3} alt=""></Image>
+            <Video 
+              open={open}
+              autoPlay
+              loop 
+              controls
+              src={vid1} />
         </Left>
         <Right>
           <Wrapper>
