@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import img3 from '../images/js1-removebg-preview.png'
 import MiniCard from './MiniCard';
+import play from "../images/play.png";
+
 const Container = styled.div`
 display: flex;  
 `;
@@ -10,6 +12,7 @@ width: 50%;
 `;
 
 const Image = styled.img`
+display: ${(props) => props.open && "none"};
 height: 100%;
 margin-left: 100px;
 `;
@@ -36,13 +39,34 @@ const CardContainer = styled.div`
 display: flex;
 justify-content: space-between;
 margin-top: 20px;
-`
+`;
+
+const Button = styled.button`
+  width: 180px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+`;
+
+const Icon = styled.img`
+  width: 20px;
+  margin-right: 10px;
+`;
 
 const Service = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <Container>
         <Left>
-            <Image src={img3} alt=""></Image>
+            <Image pen={open} src={img3} alt=""></Image>
         </Left>
         <Right>
           <Wrapper>
@@ -58,6 +82,10 @@ const Service = () => {
               <MiniCard/>
               <MiniCard/>
             </CardContainer>
+            <Button onClick={() => setOpen(true)}>
+              <Icon src={play} />
+              How it Works
+            </Button>
 
           </Wrapper>
         </Right>
