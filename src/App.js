@@ -1,6 +1,8 @@
 // import './App.css';
 import styled, { css } from 'styled-components';
+import Contact from './Components/Contact';
 import Featured from './Components/Featured';
+import Footer from './Components/Footer';
 import Intro from './Components/Intro';
 import Navbar from './Components/Navbar/Navbar';
 import Price from './Components/Price';
@@ -67,6 +69,14 @@ function App() {
       <Container>
         <Price/>
         <PriceShape/>
+      </Container>
+
+      <Container>
+        <Contact/>
+      </Container>
+
+      <Container>
+        <Footer/>
       </Container>
     </div>
   );
