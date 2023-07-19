@@ -50,7 +50,7 @@ const PriceShape = styled.div`
 function App() {
   const smallScreen = window.screen.width <= 480 ? true : false;
   return (
-    <div className="container">
+    <>
       <Container>
         <Navbar />
         <Intro />
@@ -74,12 +74,9 @@ function App() {
 
       <Container>
         <Contact/>
-      </Container>
-
-      <Container>
         <Footer/>
       </Container>
-    </div>
+    </>
   );
 }
 

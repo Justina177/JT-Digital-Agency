@@ -70,7 +70,7 @@ const Button = styled.button`
       }
 `;
 
-const PriceCard = ({price, type}) => {
+const PriceCard = ({ price, type }) => {
   return (
     <Container>
         <PriceContainer>
@@ -85,7 +85,7 @@ const PriceCard = ({price, type}) => {
         </List>
         <Button>Join Now</Button>
     </Container>
-  )
-}
+  );
+};
 
-export default PriceCard
+export default PriceCard;

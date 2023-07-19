@@ -20,7 +20,6 @@ const Logo = styled.h1`
 const Menu = styled.ul`
 display: flex;
 list-style: none;
-
 @media only screen and (max-width: 480px) {
   display: none;
 }
@@ -34,10 +33,7 @@ color: gray;
 `;
 
 const Left = styled.div`
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 `
 
 const Button = styled.button`
@@ -55,7 +51,7 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <Left>
-              <Logo>Agency</Logo>
+              <Logo>JT Digital Agency</Logo>
               <Menu>
                 <MenuItem>Home</MenuItem>
                 <MenuItem>Features</MenuItem>

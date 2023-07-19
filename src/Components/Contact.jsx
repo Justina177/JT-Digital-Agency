@@ -6,7 +6,7 @@ import Send from "../images/send.png";
 
 const Container = styled.div`
   height: 90%;
-  background: url("../images/pexels-david-mcbee-730564.jpg")
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-outline.png")
 `;
 
 const Wrapper = styled.div`

@@ -7,7 +7,6 @@ const Container = styled.div`
   height: calc(100vh - 50px);
   display: flex;
   padding: 20px;
-
   @media only screen and (max-width: 480px) {
     flex-direction: column;
   }
@@ -29,7 +28,6 @@ const Left = styled.div`
 const Title = styled.h1`
   width: 60%;
   font-size: 60px;
-
   @media only screen and (max-width: 480px) {
     width: 100%;
     font-size: 50px;
@@ -40,7 +38,6 @@ const Desc = styled.p`
   width: 60%;
   font-size: 20px;
   margin-top: 20px;
-
   @media only screen and (max-width: 480px) {
     width: 100%;
   }
@@ -48,15 +45,15 @@ const Desc = styled.p`
 
 const Info = styled.div`
   width: 60%;
+  margin-top: 50px
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   @media only screen and (max-width: 480px) {
     width: 100%;
     flex-direction: column;
   }
-`
+`;
 
 const Button = styled.button`
 padding: 15px;
@@ -105,7 +102,7 @@ const Intro = () => {
   return (
     <Container>
       <Left>
-        <Title>Adenventures in Creative age</Title>
+        <Title>Adventures in Creative age</Title>
         <Desc>
           We believe that designing products 
           and services in close partnership with 
@@ -117,8 +114,7 @@ const Intro = () => {
         <Contact>
           <Phone>Call Us (234) 132-2206</Phone>
           <ContactText>For any question or concern</ContactText>
-        </Contact>
-           
+        </Contact>   
         </Info>
       </Left>
       <Right>
@@ -126,7 +122,7 @@ const Intro = () => {
       </Right>
       <AnimatedShapes />
     </Container>
-  )
-}
+  );
+};
 
 export default Intro

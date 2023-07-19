@@ -12,7 +12,7 @@ align-items: center;
 }
 `;
 
-const Price = ({price, type}) => {
+const Price = () => {
   return (
     <Container>
         <PriceCard price="10" type="Basic" />

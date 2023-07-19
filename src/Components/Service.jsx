@@ -67,7 +67,7 @@ const Desc = styled.p`
 const CardContainer = styled.div`
 display: flex;
 justify-content: space-between;
-margin-top: 20px;
+margin-top: 50px;
 `;
 
 const Button = styled.button`
@@ -151,13 +151,13 @@ const Service = () => {
               loop 
               controls
               src={vid1} 
-              />
-              <CloseButton onClick={() => setOpen(false)}>Close</CloseButton>
+            />
+            <CloseButton onClick={() => setOpen(false)}>Close</CloseButton>
           </Modal>
         )}
     </Container>
     
-  )
-}
+  );
+};
 
-export default Service
+export default Service;
