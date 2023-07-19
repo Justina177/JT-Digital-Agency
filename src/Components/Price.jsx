@@ -7,7 +7,10 @@ height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-`
+@media only screen and (max-width: 480px) {
+  flex-direction: column;
+}
+`;
 
 const Price = ({price, type}) => {
   return (
@@ -17,7 +20,7 @@ const Price = ({price, type}) => {
         <PriceCard price="30" type="Advance" />
     </Container>
     
-  )
-}
+  );
+};
 
-export default Price
+export default Price;

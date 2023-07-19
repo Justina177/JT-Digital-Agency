@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     height: 50px;
-`
+`;
+
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
@@ -14,11 +15,15 @@ const Wrapper = styled.div`
 const Logo = styled.h1`
   font-weight: bold;
   text-decoration: underline crimson; 
-`
+`;
 
 const Menu = styled.ul`
 display: flex;
 list-style: none;
+
+@media only screen and (max-width: 480px) {
+  display: none;
+}
 `;
 
 const MenuItem = styled.div`
